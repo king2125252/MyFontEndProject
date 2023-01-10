@@ -1,6 +1,6 @@
 #logo {
-  width: 86px;
-  height: 30px;
+  width:106px;
+  height: 40px;
 }
 
 a {
@@ -35,7 +35,7 @@ a {
   display: none;
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding: 0px;
   position: absolute;
   border-radius: 10px;
   width: 100%;
@@ -46,7 +46,7 @@ a {
   text-decoration: none;
   color: black;
   display: block;
-  padding: 5px 5px;
+  padding: 10px 0px;
 }
 
 .hover-item:hover {
