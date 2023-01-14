@@ -1,0 +1,57 @@
+.trip-time{
+  position: relative;
+  top: -40%;
+  border: 0;
+}
+
+.trip-in{
+  border: none;
+}
+
+.date-btn{
+  border: none;
+  height: 40px;
+}
+
+.locDetail{
+  z-index: 5;
+  border: 1px solid red;
+  border-radius: 0px 10px 0px 0px;
+  overflow: hidden;
+  background-color: lightblue;
+  height: calc(100vh - 66px);
+}
+
+.trip-btn{
+  color: black;
+}
+
+.trip-btn:hover{
+  color: white;
+  background-color: #2670b4;
+  
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #abcae7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2670b4;
+}
+
+.locInfo-title{
+  background-color: lightblue;
+  border: 1px solid red;
+  height: 10%;
+  border-radius: 0px 20px 0px 0px ;
+  overflow: hidden;
+}
