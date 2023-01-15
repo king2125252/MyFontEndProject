@@ -55,8 +55,16 @@ button.active{
 
 .locInfo-title{
   background-color: lightblue;
-  /* border: 1px solid red; */
-  /* height: 10%; */
   border-radius: 0px 20px 0px 0px ;
   overflow: hidden;
+}
+
+.newLoc-input{
+  margin: 0% 0 5% 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+}
+.newLoc-input:focus{
+  outline: 5px solid rgba(38, 112, 180, 0.8);
 }
