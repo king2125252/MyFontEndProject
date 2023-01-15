@@ -32,6 +32,11 @@
   
 }
 
+button.active{
+  color: white;
+  background-color: #2670b4;
+}
+
 ::-webkit-scrollbar {
   width: 1rem;
 }
@@ -50,8 +55,8 @@
 
 .locInfo-title{
   background-color: lightblue;
-  border: 1px solid red;
-  height: 10%;
+  /* border: 1px solid red; */
+  /* height: 10%; */
   border-radius: 0px 20px 0px 0px ;
   overflow: hidden;
 }
