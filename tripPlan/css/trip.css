@@ -142,3 +142,33 @@ button.active {
 #mbrMsg-icon:hover{
   color: #2670b4;
 }
+
+#open-join{
+  position: absolute;
+  top: 90px;
+  right:5%;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #2670b4;
+  color: white;
+}
+
+#open-join:hover{
+  background-color: #abcae7;
+  color: black;
+}
+
+#invite{
+  position: absolute;
+  top: 90px;
+  right:calc(5% + 100px);
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: #2670b4;
+  color: white;
+}
+
+#invite:hover{
+  background-color: #abcae7;
+  color: black;
+}

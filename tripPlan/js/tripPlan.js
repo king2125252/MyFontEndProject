@@ -65,3 +65,16 @@ $('#mbrs-btn').click((e) => {
   $('#note-btn').removeClass('active');
   $('#notes').removeClass('show active');
 });
+
+$('#invite').click((e) => {
+  let memNotes = $('#mem-notes');
+  if (memNotes.css('display') === 'none') {
+    memNotes.css('display', 'block');
+  } else if ($('#mbr-btn').hasClass('active') || $('#mbr').hasClass('show active')) {
+    memNotes.css('display', 'none');
+  }
+  $('#mbr-btn').addClass('active');
+  $('#mbr').addClass('show active');
+  $('#note-btn').removeClass('active');
+  $('#notes').removeClass('show active');
+});
