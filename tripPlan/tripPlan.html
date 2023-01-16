@@ -270,103 +270,121 @@
           </div>
         </div>
       </div>
-    </div>
-    <!-- content end -->
 
+      <!-- content end -->
 
+      <div class="col-3 locInfo-title" id="mem-notes">
+        <div class="row">
+          <ul class="nav nav-pills p-0" role="tablist">
+            <li class="nav-item w-50" role="presentation">
+              <button class="btn trip-btn w-100 active" id="mbr-btn" data-bs-toggle="pill" data-bs-target="#mbr" type="button"
+                role="tab" aria-controls="mbr" aria-selected="true">
+                <i class="bi bi-people-fill fa-2x"></i>
+                <p class="m-0 d-inline">成員(5)</p>
+              </button>
+            </li>
+            <li class="nav-item w-50" role="presentation">
+              <button class="btn trip-btn w-100" id="note-btn" data-bs-toggle="pill" data-bs-target="#notes" type="button" role="tab"
+                aria-controls="notes" aria-selected="false">
+                <i class="bi bi-stickies-fill fa-2x"></i>
+                <p class="m-0 d-inline">筆記</p>
+              </button>
+            </li>
+          </ul>
 
-
-
-
-
-
-
-    <!-- trip member start -->
-    <div class="col-3 locInfo-title" id="mem-notes">
-      <div class="row">
-        <ul class="nav nav-pills p-0" role="tablist">
-          <li class="nav-item w-50" role="presentation">
-            <button class="btn trip-btn w-100 active" data-bs-toggle="pill" data-bs-target="#mbr" type="button"
-              role="tab" aria-controls="mbr" aria-selected="true">
-              <i class="bi bi-people-fill fa-2x"></i>
-              <p class="m-0 d-inline">成員(5)</p>
-            </button>
-          </li>
-          <li class="nav-item w-50" role="presentation">
-            <button class="btn trip-btn w-100" data-bs-toggle="pill" data-bs-target="#notes" type="button" role="tab"
-              aria-controls="notes" aria-selected="false">
-              <i class="bi bi-stickies-fill fa-2x"></i>
-              <p class="m-0 d-inline">筆記</p>
-            </button>
-          </li>
-        </ul>
-
-        <div class="tab-content h-100 overflow-auto">
-          <div class="tab-pane fade show active p-3 overflow-auto" id="mbr" role="tabpanel" aria-labelledby="mbr-tab"
-            style="height: calc(100vh - 66px - 65px);">
-            <div class="row">
-              <h3 class="col-12 text-center text-truncate">
-                活動名稱活動名稱活動名稱活動名稱活動名稱
-              </h3>
-            </div>
-            <div class="row">
-              <form action="" method="post">
-                <input class="col-8 newLoc-input" type="text" placeholder="請輸入好友帳號">
-                <button class="btn trip-btn py-0 px-1" type="submit"><i
-                    class="bi bi-person-plus-fill fa-2x"></i></button>
-              </form>
-            </div>
-            <div class="row">
-              <h5 class="col-12 fw-bold">群組成員</h5>
-              <div class="col-12 my-2">
-                <img src="./images/dog.jpeg" alt="" class="mbr-pic">
-                <h5 class="d-inline align-middle">成員名稱</h5>
+          <!-- trip member start -->
+          <div class="tab-content h-100 overflow-auto">
+            <div class="tab-pane fade show active p-3 overflow-auto" id="mbr" role="tabpanel" aria-labelledby="mbr-tab"
+              style="height: calc(100vh - 66px - 65px);">
+              <div class="row">
+                <h3 class="col-12 text-center text-truncate">
+                  活動名稱活動名稱活動名稱活動名稱活動名稱
+                </h3>
               </div>
-            </div>
-
-            <div class="row">
-              <h5 class="col-12 fw-bold mt-2 mb-0">邀請中(人數)</h5>
-              <div class="col-12 my-2">
-                <img src="./images/dog.jpeg" alt="" class="mbr-pic">
-                <h5 class="d-inline align-middle">成員名稱</h5>
-              </div>
-            </div>
-          </div>
-          <!-- trip member end -->
-
-          <!-- trip notes start -->
-          <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab" >
-            <div class="row">
-              <div class="col m-2">
+              <div class="row">
                 <form action="" method="post">
-                  <textarea name="" id="note-input" placeholder="旅程中，有些東西必定要帶的。可以寫在這邊，來提醒旅遊成員喔~"></textarea>
-                  <button class="btn trip-btn col-12 border-dark">儲存</button>
+                  <input class="col-8 newLoc-input" type="text" placeholder="請輸入好友帳號">
+                  <button class="btn trip-btn py-0 px-1" type="submit"><i
+                      class="bi bi-person-plus-fill fa-2x"></i></button>
                 </form>
               </div>
+              <div class="row">
+                <h5 class="col-12 fw-bold">群組成員</h5>
+                <div class="col-12 my-2">
+                  <img src="./images/dog.jpeg" alt="" class="mbr-pic">
+                  <h5 class="d-inline align-middle">成員名稱</h5>
+                </div>
+              </div>
+
+              <div class="row">
+                <h5 class="col-12 fw-bold mt-2 mb-0">邀請中(人數)</h5>
+                <div class="col-12 my-2">
+                  <img src="./images/dog.jpeg" alt="" class="mbr-pic">
+                  <h5 class="d-inline align-middle">成員名稱</h5>
+                </div>
+              </div>
+            </div>
+            <!-- trip member end -->
+
+            <!-- trip notes start -->
+            <div class="tab-pane fade" id="notes" role="tabpanel" aria-labelledby="notes-tab">
+              <div class="row">
+                <div class="col m-2">
+                  <form action="" method="post">
+                    <textarea name="" id="note-input" placeholder="旅程中，有些東西必定要帶的。可以寫在這邊，來提醒旅遊成員喔~"></textarea>
+                    <button class="btn trip-btn col-12 border-dark">儲存</button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
           <!-- trip notes end -->
-
-        
-
-
-
-
-
-
-
+        </div>
       </div>
+      <!-- mbr group msg start -->
+      <div class="col-3 p-2 pt-0" id="mbr-chat">
+        <div class="row" style="background-color: rgba(38, 112, 180, 0.6);">
+          <h5 class="col-6 text-truncate text-start fw-bold m-0 align-middle py-2">活動名稱(人數)</h5>
+          <button class="col-2 btn trip-btn" id="notes-btn"><i class="bi bi-stickies-fill"></i></button>
+          <button class="col-2 btn trip-btn" id="mbrs-btn"><i class="bi bi-gear-fill"></i></button>
+          <button class="col-2 btn trip-btn" id="close-msg"><i class="bi bi-dash"></i></button>
+        </div>
+        <hr class="m-0">
+
+        <div class="row" id="msg-content">
+          <div class="col-12 m-2">
+            <img src="./images/dog.jpeg" class="user-pic d-inline align-top" alt="使用者">
+            <p class="trip-msg">
+              xxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+            <p class="d-inline align-bottom" style="font-size: 10px;">下午12:00</p>
+          </div>
+          <div class="col-12 m-2">
+            <img src="./images/dog.jpeg" class="user-pic d-inline align-top" alt="使用者">
+            <p class="trip-msg">
+              XXXXXXXXXXXXXXXXX</p>
+            <p class="d-inline align-bottom" style="font-size: 10px;">下午12:00</p>
+          </div>
+          <div class="col-12 m-2 text-end">
+            <p class="d-inline align-bottom" style="font-size: 10px;">下午12:00</p>
+            <p class="trip-msg">
+              xxXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+          </div>
+        </div>
+
+        <div class="row" style="background-color: aliceblue;">
+          <form action="" method="post">
+            <input type="text" id="msg-input">
+            <button type="submit" class="btn trip-btn"><i class="bi bi-send-fill"></i></button>
+          </form>
+        </div>
+      </div>
+      <!-- mbr group msg end -->
+      
     </div>
-
-
-
-
-
-
-
-
   </div>
+  <!-- mbr group msg icon -->
+  <button class="btn" id="mbrMsg-icon"><i class="bi bi-chat-dots-fill fa-4x"></i></button>
+  <!-- mbr group msg icon end -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>

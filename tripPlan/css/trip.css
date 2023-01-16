@@ -1,23 +1,23 @@
-body{
+body {
   overflow: hidden;
 }
 
-.trip-time{
+.trip-time {
   position: relative;
   top: -40%;
   border: 0;
 }
 
-.trip-in{
+.trip-in {
   border: none;
 }
 
-.date-btn{
+.date-btn {
   border: none;
   height: 40px;
 }
 
-.locDetail{
+.locDetail {
   z-index: 5;
   border: 1px solid red;
   border-radius: 0px 10px 0px 0px;
@@ -26,17 +26,17 @@ body{
   height: calc(100vh - 66px);
 }
 
-.trip-btn{
+.trip-btn {
   color: black;
 }
 
-.trip-btn:hover{
+.trip-btn:hover {
   color: white;
   background-color: #2670b4;
-  
+
 }
 
-button.active{
+button.active {
   color: white;
   background-color: #2670b4;
 }
@@ -57,36 +57,38 @@ button.active{
   background: #2670b4;
 }
 
-.locInfo-title{
+.locInfo-title {
   background-color: lightblue;
   overflow: hidden;
 }
 
-.newLoc-input{
+.newLoc-input {
   margin: 0% 0 5% 0;
   padding: 10px;
   border-radius: 10px;
   border: 0;
 }
-.newLoc-input:focus{
+
+.newLoc-input:focus {
   outline: 5px solid rgba(38, 112, 180, 0.8);
 }
 
-#mem-notes{
+#mem-notes {
   position: absolute;
   height: calc(100% - 66px);
   top: 66px;
   right: 25%;
+  display: none;
 }
 
-.mbr-pic{
+.mbr-pic {
   height: 50px;
   width: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-#note-input{
+#note-input {
   margin: 0% 0 5% 0;
   padding: 10px;
   background-color: lightblue;
@@ -96,6 +98,47 @@ button.active{
   resize: none;
 }
 
-#note-input:focus{
+#note-input:focus {
   outline: none;
+}
+
+#mbr-chat {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  height: 50%;
+  display: none;
+}
+
+.trip-msg {
+  border: 1px solid black;
+  padding: 5px;
+  display: inline-block;
+  width: 50%;
+  word-wrap: break-word;
+  margin: 0 0 0 2%;
+  border-radius: 10px;
+}
+
+#msg-content{
+  height: calc(100% - 70px);
+  overflow: auto;
+  overflow-x: hidden;
+  background-color: aliceblue;
+}
+
+#msg-input{
+  border-radius: 15px;
+  padding: 3px;
+  width: 80%;
+}
+
+#mbrMsg-icon{
+  position: absolute;
+  top: 80%;
+  right:5%;
+}
+
+#mbrMsg-icon:hover{
+  color: #2670b4;
 }
