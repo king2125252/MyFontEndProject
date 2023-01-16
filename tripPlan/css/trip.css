@@ -59,7 +59,6 @@ button.active{
 
 .locInfo-title{
   background-color: lightblue;
-  border-radius: 0px 20px 0px 0px ;
   overflow: hidden;
 }
 
@@ -74,7 +73,6 @@ button.active{
 }
 
 #mem-notes{
-  border: 1px solid red;
   position: absolute;
   height: calc(100% - 66px);
   top: 66px;

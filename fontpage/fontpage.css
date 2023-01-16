@@ -138,10 +138,11 @@ a{
   vertical-align: bottom;
 }
 
-.chat-icon{
+#chat-icon{
   position: fixed;
   z-index: 5;
   right: 5%;
+  bottom: 2%;
 }
 
 .user-msg{
@@ -202,4 +203,15 @@ a{
 
 .info-item:hover{
   background-color: #fff;
+}
+
+#service-box{
+  padding: 0;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  position: relative;
+  left: 100%;
+  transform: translateX(-85%);
+  width: 30%;
+  display: none;
 }
