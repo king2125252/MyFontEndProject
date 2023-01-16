@@ -11,6 +11,7 @@
     integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/trip.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
   <title>7 Tour | 行程規劃 | TripPlan</title>
 </head>
 
@@ -388,6 +389,8 @@
   <a href="#" id="open-join">公開糾團</a>
   <button id="invite" class="btn">邀請好友</button>
 
+  <div id="map"></div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -396,6 +399,8 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/616f19a0b0.js" crossorigin="anonymous"></script>
   <script src="./js/tripPlan.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <script src="./js/map.js"></script>
 </body>
 
 </html>
