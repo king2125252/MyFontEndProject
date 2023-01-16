@@ -1,3 +1,7 @@
+body{
+  overflow: hidden;
+}
+
 .trip-time{
   position: relative;
   top: -40%;
@@ -67,4 +71,33 @@ button.active{
 }
 .newLoc-input:focus{
   outline: 5px solid rgba(38, 112, 180, 0.8);
+}
+
+#mem-notes{
+  border: 1px solid red;
+  position: absolute;
+  height: calc(100% - 66px);
+  top: 66px;
+  right: 25%;
+}
+
+.mbr-pic{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#note-input{
+  margin: 0% 0 5% 0;
+  padding: 10px;
+  background-color: lightblue;
+  border: 0;
+  width: 100%;
+  height: 400px;
+  resize: none;
+}
+
+#note-input:focus{
+  outline: none;
 }
