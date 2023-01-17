@@ -79,7 +79,7 @@ button.active {
   top: 66px;
   right: 25%;
   display: none;
-  z-index: 999;
+  z-index: 99;
 }
 
 .mbr-pic {
@@ -109,7 +109,7 @@ button.active {
   top: 50%;
   height: 50%;
   display: none;
-  z-index: 999;
+  z-index: 99;
 }
 
 .trip-msg {
@@ -139,7 +139,7 @@ button.active {
   position: absolute;
   top: 80%;
   right:5%;
-  z-index: 999;
+  z-index: 99;
 }
 
 #mbrMsg-icon:hover{
@@ -154,7 +154,7 @@ button.active {
   border-radius: 15px;
   background-color: #2670b4;
   color: white;
-  z-index: 999;
+  z-index: 99;
 }
 
 #open-join:hover{
@@ -170,7 +170,7 @@ button.active {
   border-radius: 15px;
   background-color: #2670b4;
   color: white;
-  z-index: 999;
+  z-index: 99;
 }
 
 #invite:hover{
@@ -188,5 +188,18 @@ button.active {
 }
 
 #loc-info{
+  z-index: 99;
+}
+
+#locAdd{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 25%;
+  height: 50%;
+  padding: 5px 15px;
+  border-radius: 15px;
+  background-color: rgb(210, 233, 240);
+  box-shadow: 2px 2px 2px gray;
   z-index: 999;
 }
