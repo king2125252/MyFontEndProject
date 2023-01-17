@@ -174,7 +174,6 @@
       <!-- right end -->
 
 
-
       <!-- loc info start -->
       <div class="col-3 locInfo-title collapse" id="loc-info">
         <div class="row">
@@ -236,7 +235,40 @@
               </div>
 
               <div class="row justify-content-center">
-                <button class="col-8 btn trip-btn fw-bold border-dark">加入行程</button>
+                <button class="col-8 btn trip-btn fw-bold border-dark" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">加入行程</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="exampleModalLabel">加入行程</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <form action="" method="post">
+                        <div class="modal-body">
+                          <div class="text-center m-2">
+                            <label for="">預計到達時間 : </label>
+                            <input type="text">
+                          </div>
+                          <div class="text-center m-2">
+                            <label for="">預計離開時間 : </label>
+                            <input type="text">
+                          </div>
+                          <div class="text-center m-2">
+                            <label for="">預計停留時間 : </label>
+                            <input type="text" disabled>
+                          </div>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                          <button type="submit" class="btn btn-primary">確定</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <!-- loc info end -->
@@ -390,11 +422,8 @@
   <a href="#" id="open-join">公開糾團</a>
   <button id="invite" class="btn">邀請好友</button>
 
-  <!-- add loc start -->
-  <div id="locAdd">XXXXXXXXXXXXXXXXXXXXXXXXXX</div>
-  <!-- add loc end -->
-
   <div id="map"></div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
     integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
@@ -408,5 +437,7 @@
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
   <script src="./js/map.js"></script>
 </body>
+
+
 
 </html>
