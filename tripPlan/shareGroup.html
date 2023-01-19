@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/header.css">
+  <title>7 Tour | 行程規劃 | TripPlan</title>
+</head>
+
+<body>
+  <!-- nav start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-cblue sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./header.html">
+        <img src="./images/bgremove_Logo.jpg" id="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item hover-down">
+            <a class="nav-link fs-5 fw-bold" href="#">論壇</a>
+            <ul class="bg-cblue hover-list">
+              <li><a class="hover-item fs-5 fw-bold" href="#">論壇首頁</a></li>
+              <li><a class="hover-item fs-5 fw-bold" href="#">文章</a></li>
+            </ul>
+          </li>
+          <li class="nav-item hover-down">
+            <a class="nav-link fs-5 fw-bold" href="#">訂房</a>
+            <ul class="bg-cblue hover-list">
+              <li><a class="hover-item fs-5 fw-bold" href="#">訂房首頁</a></li>
+              <li><a class="hover-item fs-5 fw-bold" href="#">我的訂單</a></li>
+              <li><a class="hover-item fs-5 fw-bold" href="#">購物車</a></li>
+            </ul>
+          </li>
+          <li class="nav-item hover-down">
+            <a class="nav-link fs-5 fw-bold" href="#">揪團</a>
+            <ul class="bg-cblue hover-list">
+              <li><a class="hover-item fs-5 fw-bold" href="#">揪團首頁</a></li>
+              <li><a class="hover-item fs-5 fw-bold" href="#">建立揪團</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item bg-dblue rounded mx-3 input-group">
+            <input type="search" class="form-control">
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </li>
+
+          <li class="nav-item user-msg">
+            <i class="bi bi-bell-fill fa-2x msg-icon"></i>
+            <ul class="bg-cblue msg-list">
+              <li class="msg-item">
+                <h5>title</h5>
+                <p class="text-truncate">
+                  訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容訊息內容
+                </p>
+              </li>
+              <hr class="m-1">
+
+              <li class="msg-item">
+                <h5>title</h5>
+                <p class="text-truncate">訊息內容</p>
+              </li>
+              <hr class="m-1">
+
+              <li class="msg-item">
+                <form action="">
+                  <h5>XXX邀請你，共同規畫行程</h5>
+                  <button class="btn btn-primary rounded p-1">確認</button>
+                  <button class="btn btn-danger rounded p-1">拒絕</button>
+                </form>
+              </li>
+              <hr class="m-1">
+
+              <li class="msg-item">
+                <h5>title</h5>
+                <p class="text-truncate">訊息內容</p>
+              </li>
+              <hr class="m-1">
+            </ul>
+          </li>
+
+          <li class="nav-item mx-3 user-info">
+            <img src="./images/dog.jpeg" alt="會員照片" class="user-pic">
+            <ul class="bg-cblue info-list">
+              <li><a href="#" class="d-block info-item">會員基本資料</a></li>
+              <li><a href="#" class="d-block info-item">我的行程</a></li>
+              <li><a href="#" class="d-block info-item">我的收藏</a></li>
+              <li><a href="#" class="d-block info-item">我的訂單</a></li>
+              <li><a href="#" class="d-block info-item">登出</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end -->
+
+  <!-- content start -->
+  <section class="intro">
+    <div class="bg-image-vertical" style="margin-bottom: -50px; background-color: #EFD3E4;
+            background-image: url(./images/shareGroup.jpg); background-size: cover;">
+      <div class="mask d-flex align-items-center h-100">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 w-50">
+              <div class="card" style="border-radius: 1rem; background-color: rgba(255,255,255,0.4 );">
+                <div class="card-body p-4">
+                  <h1 class="mb-4 text-center">公開揪團</h1>
+                  <form>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="groupTopic">活動名稱 : </label>
+                      <input type="text" id="groupTopic" class="form-control" required />
+                    </div>
+
+                    <div class="d-flex justify-content-around">
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="regStart">報名開始時間 : </label>
+                        <input type="text" id="regStart" class="form-control" required />
+                      </div>
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="regEnd">報名截止日期 : </label>
+                        <input type="email" id="regEnd" class="form-control" required />
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-around">
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="tripStart">行程開始時間 : </label>
+                        <input type="text" id="tripStart" class="form-control" required />
+                      </div>
+
+                      <div class="form-outline mb-4">
+                        <label class="form-label" for="tripEnd">行程結束日期 : </label>
+                        <input type="email" id="tripEnd" class="form-control" required />
+                      </div>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="numPeo">活動人數 : </label>
+                      <input type="number" min="0" id="numPeo" class="form-control" required />
+                    </div>
+
+
+                    <div class="form-outline mb-4">
+                      <label class="form-label" for="actContent">活動內容</label>
+                      <textarea class="form-control" style="height: 200px; resize: none;" id="actContent" required></textarea>
+                    </div>
+
+                    <!-- Submit button -->
+                    <div class="text-end">
+                      <a href="#" class="btn btn-secondary">取消</a>
+                      <button type="submit" class="btn btn-primary">送出</button>
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- content end -->
+
+    <!-- footer start -->
+
+    <footer class="text-center text-lg-start text-dark bg-cblue mt-5">
+      <div class="container p-4 pb-0">
+        <div class="row">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="mb-2 font-weight-bold">TibaMe CGA105 JAVA班 第七組</h6>
+            <p class="mb-2">組員 : </p>
+            <p>
+              XXXXXXX
+            </p>
+          </div>
+  
+          <hr class="w-100 clearfix d-md-none" />
+  
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">聯絡資訊</h6>
+            <p><i class="fas fa-envelope mr-3"></i>組長的email</p>
+            <p><i class="fas fa-phone mr-3"></i>組長的電話</p>
+          </div>
+        </div>
+  
+        <hr class="my-3">
+  
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <div class="p-3">© 2020 Copyright</div>
+            </div>
+  
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <!-- Facebook -->
+              <a class="btn btn-outline-light btn-floating m-1" role="button">
+                <i class="fab fa-facebook-f"></i></a>
+  
+              <!-- Google -->
+              <a class="btn btn-outline-light btn-floating m-1" role="button">
+                <i class="fab fa-google"></i></a>
+  
+              <!-- Instagram -->
+              <a class="btn btn-outline-light btn-floating m-1" role="button">
+                <i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+    <!-- footer end -->
+  
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/616f19a0b0.js" crossorigin="anonymous"></script>
+</body>
+
+
+
+</html>
