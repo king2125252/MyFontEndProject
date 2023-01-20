@@ -120,27 +120,27 @@
 
     <div class="row">
       <div class="col px-5 text-end">
-        <button class="btn btn-primary">+建立行程</button>
+        <button class="btn btn-primary"  data-bs-toggle="modal" data-bs-target=".newTrip">+建立行程</button>
       </div>
     </div>
 
     <div class="row">
       <div class="col px-5">
-        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        
+
+
+        <ul class="nav nav-pills mb-3" id="pills-tab">
           <li class="nav-item" role="presentation">
-            <button class="trip-btn btn active" id="user-trip-tab" data-bs-toggle="pill" data-bs-target="#user-trip"
-              type="button" role="tab" aria-controls="user-trip" aria-selected="true">我的行程</button>
+            <button class="btn trip-btn active" data-bs-toggle="pill" data-bs-target="#user-trip" type="button" aria-selected="true">我的行程</button>
           </li>
           <li class="nav-item" role="presentation">
-            <button class="trip-btn btn" id="trip-group-tab" data-bs-toggle="pill" data-bs-target="#trip-group"
-              type="button" role="tab" aria-controls="trip-group" aria-selected="false">旅遊群組</button>
+            <button class="btn trip-btn" data-bs-toggle="pill" data-bs-target="#trip-group" type="button" aria-selected="false">旅遊群組</button>
           </li>
         </ul>
-        <div class="tab-content px-3 container" id="pills-tabContent">
-
-          <div class="row d-flex tab-pane fade show active" id="user-trip" role="tabpanel" aria-labelledby="user-trip-tab">
-
-            <div class="col-4 card tripCard m-2 me-auto" style="width: 18rem;">
+        <div class="tab-content pt-2 px-3" id="pills-tabContent">
+          <div class="tab-pane fade show active text-center" id="user-trip">
+            
+            <div class="card tripCard d-inline-block m-2" style="width: 18rem;">
               <a href="#"><img src="./images/Logo.jpg" class="card-img-top"></a>
               <div class="card-body">
                 <h5 class="card-title fw-bold">Card title</h5>
@@ -156,13 +156,76 @@
             
           </div>
 
-          <div class="tab-pane fade" id="trip-group" role="tabpanel" aria-labelledby="trip-group-tab">tripGroup</div>
+          <div class="tab-pane fade text-center" id="trip-group">
+
+          <div>
+            <i class="bi bi-people-fill fa-5x"></i>
+            <h5>您尚未有任何旅遊群組!</h5>
+          </div>
+
+
+          </div>
         </div>
+
       </div>
     </div>
   </div>
 
   <!-- content end -->
+
+  <!-- new trip start -->
+
+  <div class="modal fade newTrip" tabindex="-1" aria-labelledby="newTripLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color:rgba(171, 192, 231, .7);">
+        <div class="modal-header">
+          <h5 class="modal-title newTripLabel">建立行程</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form action="" method="post">
+          <div class="modal-body">
+            <div class="form-outline mb-4">
+              <label class="form-label" for="groupTopic">名稱 : </label>
+              <input type="text" id="groupTopic" class="form-control" required />
+            </div>
+
+            <div class="d-flex justify-content-around">
+              <div class="form-outline mb-4">
+                <label class="form-label" for="tripStart">行程開始時間 : </label>
+                <input type="text" id="tripStart" class="form-control" required />
+              </div>
+
+              <div class="form-outline mb-4">
+                <label class="form-label" for="tripEnd">行程結束日期 : </label>
+                <input type="email" id="tripEnd" class="form-control" required />
+              </div>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="actContent">提醒事項</label>
+              <textarea class="form-control" style="height: 200px; resize: none;" id="actContent" required></textarea>
+            </div>
+
+
+
+            <img class="shadow w-100" style="height: 300px;" hidden>
+            <div class="input-group p-3">
+              <label class="input-group-text" for="cover-pic">封面背景</label>
+              <input type="file" class="form-control" id="cover-pic">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="submit" class="btn btn-primary">7Tour 囉!!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- new trip end -->
 
   <!-- UpdatePIC  start-->
   <div class="modal fade changeIMG" tabindex="-1" aria-labelledby="changeIMGLabel" aria-hidden="true">
