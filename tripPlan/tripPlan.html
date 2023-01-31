@@ -143,12 +143,15 @@
           </div>
         </div>
 
-        <div class="row">
-          <button class="col date-btn"><i class="bi bi-arrow-left"></i></button>
-          <button class="col date-btn">12/05</button>
-          <button class="col date-btn">12/06</button>
-          <button class="col date-btn">12/07</button>
-          <button class="col date-btn"><i class="bi bi-arrow-right"></i></button>
+        <div class="row overflow-hidden flex-nowrap" id="scroll-content">
+          <button id="dateLeft"><i class="bi bi-arrow-left"></i></button>
+
+          <form class="p-0 position-relative" style="width: 75px;">
+            <button class="date-btn">12/05</button>
+            <button class="p-0 delete-tripDate" title="刪除當天行程"><i class="bi bi-trash3-fill"></i></button>
+          </form>
+          
+          <button id="dateRight"><i class="bi bi-arrow-right"></i></button>
         </div>
 
         <div class="row ">
@@ -156,8 +159,8 @@
           <p class="col-6 px-2 py-2 m-0">出發時間 : 10:00</p>
         </div>
 
-        <div class="row">
-          <a href="#loc-info" class="col-12 d-flex align-items-center bg-cblue my-2 custom-loc"
+        <div class="row my-2">
+          <a href="#loc-info" class="col-10 d-flex align-items-center bg-cblue custom-loc"
             data-bs-toggle="collapse">
             <div class="col-3">
               <img src="./images/dog.jpeg" alt="..." class="w-100">
@@ -167,7 +170,7 @@
               <p class="m-1 text-truncate">地點名稱</p>
             </div>
           </a>
-
+          <button class="col-2 delete-tripLoc" title="刪除地點"><i class="bi bi-trash3-fill"></i></button>
         </div>
 
       </div>
@@ -289,15 +292,18 @@
               <div class="row">
                 <h4 class="fw-bold mt-3 p-0">我的自訂地點</h4>
                 <!--customLocation btn start -->
-                <button class="custom-loc btn trip-btn col-12 d-flex align-items-center bg-cblue my-2">
+                <a class="custom-loc btn trip-btn col-12 d-flex align-items-center bg-cblue my-2 p-0">
                   <div class="col-3">
-                    <img src="./images/dog.jpeg" alt="..." class="w-100">
+                    <i class="bi bi-geo-alt-fill fa-2x"></i>
                   </div>
-                  <div class="col-8 px-2">
+                  <div class="col-7 px-2">
                     <p class="text-start text-truncate m-1">地點名稱</p>
                     <p class="text-start text-truncate m-1">地點地址</p>
                   </div>
-                </button>
+                  <div class="col-2">
+                    <button class="delete-cusLoc" title="刪除我的地點"><i class="bi bi-trash3-fill fa-2x"></i></button>
+                  </div>
+                </a>
                 <!--customLocation btn end -->
               </div>
             </div>
@@ -375,8 +381,27 @@
           <!-- trip notes end -->
         </div>
       </div>
+
+      <div class="col-3 overflow-auto" id="search-content">
+        <div class="d-flex p-2">
+          <h3>搜尋結果 : </h3>
+          <button class="ms-auto btn trip-btn" id="close-search"><i class="bi bi-x-lg"></i></button>
+        </div>
+          <a href="#loc-info" class="d-flex align-items-center bg-cblue my-2 custom-loc p-2"
+            data-bs-toggle="collapse">
+            <div class="col-3">
+              <img src="./images/dog.jpeg" class="w-100">
+            </div>
+            <div class="col-8 px-2">
+              <p class="m-1 text-truncate">地點名稱</p>
+              <p class="m-1 text-truncate">地點地址</p>
+            </div>
+          </a>
+
+      </div>
+
       <!-- mbr group msg start -->
-      <div class="col-3 p-2 pt-0" id="mbr-chat">
+      <div class="col-3 p-2 pt-0 overflow-hidden" id="mbr-chat">
         <div class="row" style="background-color: rgba(38, 112, 180, 0.6);">
           <h5 class="col-6 text-truncate text-start fw-bold m-0 align-middle py-2">活動名稱(人數)</h5>
           <button class="col-2 btn trip-btn" id="notes-btn"><i class="bi bi-stickies-fill"></i></button>

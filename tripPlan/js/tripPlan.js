@@ -78,3 +78,21 @@ $('#invite').click((e) => {
   $('#note-btn').removeClass('active');
   $('#notes').removeClass('show active');
 });
+
+//date control
+$("#dateRight").click(function() {
+  $("#scroll-content").animate({
+  scrollLeft: "+=75px"
+  }, "slow");
+  });
+
+$("#dateLeft").click(function() {
+  $("#scroll-content").animate({
+  scrollLeft: "-=75px"
+  }, "slow");
+  });
+
+  //close-search
+  $('#close-search').click(function(){
+    $('#search-content').css('display','none');
+  });
